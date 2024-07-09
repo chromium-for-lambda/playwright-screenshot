@@ -1,8 +1,9 @@
 {
-  "name": "playwright-example-cdk",
+  "name": "@chromium-for-lambda/playwright-screenshot",
+  "description": "Use Chromium with Plawright to create website screenshots in AWS Lambda",
   "repository": {
     "type": "git",
-    "url": "https://github.com/stephan/playwright-example-cdk.git"
+    "url": "https://github.com/chromium-for-lambda/playwright-screenshot.git"
   },
   "scripts": {
     "build": "npx projen build",
@@ -30,15 +31,16 @@
   },
   "author": {
     "name": "Stephan Kaag",
-    "email": "stephan@ka.ag",
+    "email": "stephan@chromiumforlambda.org",
     "organization": false
   },
   "devDependencies": {
+    "@types/aws-lambda": "^8.10.140",
     "@types/jest": "^29.5.12",
     "@types/node": "^18",
     "@typescript-eslint/eslint-plugin": "^7",
     "@typescript-eslint/parser": "^7",
-    "aws-cdk-lib": "2.1.0",
+    "aws-cdk-lib": "2.148.0",
     "constructs": "10.0.5",
     "eslint": "^8",
     "eslint-import-resolver-typescript": "^3.6.1",
@@ -57,17 +59,24 @@
     "typescript": "^5.5.3"
   },
   "peerDependencies": {
-    "aws-cdk-lib": "^2.1.0",
+    "aws-cdk-lib": "^2.148.0",
     "constructs": "^10.0.5"
   },
+  "dependencies": {
+    "@aws-sdk/client-s3": "^3.609.0",
+    "@aws-sdk/s3-request-presigner": "^3.609.0",
+    "playwright-core": "1.41.2"
+  },
+  "bundledDependencies": [
+    "@aws-sdk/client-s3",
+    "@aws-sdk/s3-request-presigner",
+    "playwright-core"
+  ],
   "keywords": [
     "cdk"
   ],
   "main": "lib/index.js",
-  "license": "Apache-2.0",
-  "publishConfig": {
-    "access": "public"
-  },
+  "license": "MIT",
   "version": "0.0.0",
   "jest": {
     "coverageProvider": "v8",
