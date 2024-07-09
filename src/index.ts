@@ -17,10 +17,10 @@ export class ScreenshotLib extends Construct {
       runtime: Runtime.NODEJS_20_X,
       environment: {
         FILES_BUCKET: screenshotBucket.bucketName,
-        PLAYWRIGHT_CHROMIUM_DOWNLOAD_HOST: 'https://files.chromiumforlambda.org/amazon-linux-2023/arm64',
+        PLAYWRIGHT_CHROMIUM_DOWNLOAD_HOST: 'https://files.chromiumforlambda.org/amazon-linux-2023/x86_64',
         PLAYWRIGHT_BROWSERS_PATH: '/tmp',
       },
-      architecture: Architecture.ARM_64,
+      architecture: Architecture.X86_64,
       timeout: Duration.seconds(60),
       memorySize: 1024,
       bundling: {
