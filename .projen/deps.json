@@ -1,6 +1,10 @@
 {
   "dependencies": [
     {
+      "name": "@types/aws-lambda",
+      "type": "build"
+    },
+    {
       "name": "@types/jest",
       "type": "build"
     },
@@ -85,8 +89,21 @@
       "type": "build"
     },
     {
+      "name": "@aws-sdk/client-s3",
+      "type": "bundled"
+    },
+    {
+      "name": "@aws-sdk/s3-request-presigner",
+      "type": "bundled"
+    },
+    {
+      "name": "playwright-core",
+      "version": "1.41.2",
+      "type": "bundled"
+    },
+    {
       "name": "aws-cdk-lib",
-      "version": "^2.1.0",
+      "version": "^2.148.0",
       "type": "peer"
     },
     {
