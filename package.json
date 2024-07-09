@@ -73,7 +73,13 @@
     "playwright-core"
   ],
   "keywords": [
-    "cdk"
+    "awscdk",
+    "cdk",
+    "chrome",
+    "chromium",
+    "headless",
+    "playwright",
+    "puppeteer"
   ],
   "main": "lib/index.js",
   "license": "MIT",

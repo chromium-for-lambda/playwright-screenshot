@@ -15,5 +15,6 @@ const project = new awscdk.AwsCdkConstructLibrary({
   description: 'Use Chromium with Plawright to create website screenshots in AWS Lambda', /* The description is just a string that helps people understand the purpose of the package. */
   devDeps: ['@types/aws-lambda'], /* Build dependencies for this module. */
   npmAccess: NpmAccess.PUBLIC,
+  keywords: ['awscdk', 'cdk', 'playwright', 'puppeteer', 'chromium', 'chrome', 'headless'],
 });
 project.synth();
