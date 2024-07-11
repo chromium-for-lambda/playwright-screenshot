@@ -1,3 +1,5 @@
+[![View on Construct Hub](https://constructs.dev/badge?package=%40chromium-for-lambda%2Fplaywright-screenshot)](https://constructs.dev/packages/@chromium-for-lambda/playwright-screenshot)
+
 # Playwright Screenshot Construct for AWS CDK
 
 This AWS CDK construct provides a simple way to create a screenshot of a URL using Chromium and Playwright on AWS Lambda. With this construct, you can easily integrate screenshotting functionality into your AWS-based applications.
